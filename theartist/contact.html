@@ -1,0 +1,143 @@
+<!doctype>
+<html>
+    
+    <head>
+        <title>The Artist: Contact Us</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <!--<script src="js/app.js" type="text/javascript"></script>-->
+        <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    
+    
+    <body>
+        <!--div to wrap all content-->
+        <div class="container ">
+            
+            
+            
+            <header class="clearfix">
+                <!--left header-->
+                <div id="head-left">
+                    <!--animation-left-->
+                    <div class="anim-left">
+                         <div class="ball-anim">
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                        </div>
+                    </div>
+                    <nav class="nav-left">
+                        <ul class="clearfix">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">products</a></li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+                <!--middle-header-->
+                
+                <div id="head-middle">
+                    <div class="logo">
+<!--                        <img src="temp-pic/logo.svg" width="219px" height="199px">-->
+                   
+                   <img src="images/logo.svg"/>
+                    </div>
+                        
+                    
+                </div>
+                
+                <!--right-header-->
+                <div id="head-right">
+                    <!--animation-right-->
+                     <div class="anim-right">
+                         <div class="ball-anim">
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                          <div class="ball"></div>
+                        </div>
+                    </div>
+                    
+                    <!--nav-right-->
+                    <nav class="nav-right">
+                        <ul class="clearfix">
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+                
+            </header> 
+            
+            
+            <div class="contact-container">
+                <div class="contact-wrapper">
+                    <h2 style="font-size:3em">Contact Us</h2>
+                    <div class="address">
+                        <h3>Our Location</h3>
+                        <ul>
+                            <li>Mission Cross Road</li>
+                            <li>Lallmatie</li>
+                            <li>Mauritius</li>
+                        </ul>
+                    </div>
+                    <div class="both-map">
+                    <div class="contact-form">
+                        <form>
+                            
+                            <div class="name-con">
+                                <input placeholder="NAME:" type="text">
+                            <input placeholder="COMPANY:" type="text">
+                            </div>
+                            <div class="email-con">
+                                <input placeholder="PHONE:" type="text">
+                            <input placeholder="EMAIL:" type="email">
+                            </div>
+                            
+                             <textarea placeholder="Write a message" rows="4" cols="35"></textarea> 
+                            
+                            
+                            <input value="SEND MESSAGE" type="submit">
+                        </form>
+                    </div>
+                    
+                    <div class="map">
+                        <div style="width:300px; height:300px; background-color: grey;
+" id="map"></div>
+                            <script>
+                              function initMap() {
+                                var uluru = {lat: -25.363, lng: 131.044};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                  zoom: 4,
+                                  center: uluru
+                                });
+                                var marker = new google.maps.Marker({
+                                  position: uluru,
+                                  map: map
+                                });
+                              }
+                            </script>
+                            <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDySDkPKsh_AKmTCuCIfzty7ZlhKfM6f08&callback=initMap">
+                            </script>
+
+                        
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </body>
+</html>
